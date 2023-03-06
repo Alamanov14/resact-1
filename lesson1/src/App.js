@@ -15,8 +15,9 @@ const App = () => {
     <div>
       <Header />
       <Section dataUser={dataUser} />
-      <Footer />
+
       <Read data={data} />
+      <Footer />
     </div>
   );
 };

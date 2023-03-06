@@ -34,26 +34,26 @@ const Section = (props) => {
     setLast("");
   };
   return (
-    <div>
+    <div id="div2">
       <ul id="inpUserList">
         <input
           value={inpName}
           type="text"
-          className="inpUser"
+          className="label"
           placeholder="name"
           onChange={handleInpName}
         />
         <input
           value={inpLast}
           type="text"
-          className="inpUser"
+          className="label"
           placeholder="last name"
           onChange={handleInpLastName}
         />
         <input
           value={inpAge}
           type="text"
-          className="inpUser"
+          className="label"
           placeholder="age"
           onChange={handleInpAge}
         />

@@ -4,17 +4,21 @@ const Read = (props) => {
   return (
     <div className="div1">
       {props.data.map((item) => (
-        <table>
-          <tr>
-            <th>Имя</th>
-            <th>Отчество</th>
-            <th>Возраст</th>
-          </tr>
-          <tr key={item.id}>
-            <td>{item.name}</td>
-            <td>{item.lastName}</td>
-            <td>{item.age}</td>
-          </tr>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ИМЯ</th>
+              <th>ОТЧЕСТВО</th>
+              <th>ВОЗРАСТ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr key={item.id}>
+              <td>{item.name}</td>
+              <td>{item.lastName}</td>
+              <td>{item.age}</td>
+            </tr>
+          </tbody>
         </table>
       ))}
     </div>
